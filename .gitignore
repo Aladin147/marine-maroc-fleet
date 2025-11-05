@@ -1,0 +1,61 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies (we're not committing the actual repos)
+node_modules/
+vendor/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+dist/
+build/
+*.zip
+*.tar.gz
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database
+*.sql
+*.sqlite
+*.db
+
+# Backups
+*.bak
+*.backup
+
+# Cloned repositories (we only want docs)
+fleetbase/
+fleetops/
+navigator-app/
+
+# Keep only documentation and specs
+!docs/
+!.kiro/
+!assets/
+!*.md
