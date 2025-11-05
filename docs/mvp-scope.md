@@ -1,8 +1,26 @@
 # Marine Maroc Fleet Management - MVP Scope
 
+## 🎯 Critical Insight (Read This First!)
+
+**From Marine Maroc Collaborators:** 
+> "The majority of our truck drivers have low literacy in both French and Arabic. Many can recognize basic Arabic letters but struggle with reading full sentences."
+
+**Our Strategic Response:**
+We've pivoted to make **Arabic-first, icon-heavy UX** the core of our MVP. This is not just a feature - it's our competitive advantage.
+
+**Why This Wins:**
+- Traditional fleet apps fail because drivers can't/won't use them (50-60% adoption)
+- Our Arabic-first, icon-heavy design targets 95%+ adoption
+- Voice messages eliminate typing barrier
+- First mover advantage in Arabic-first fleet management
+
+**See:** [Arabic UX Strategy](arabic-ux-strategy.md) | [Competitive Advantage](../COMPETITIVE_ADVANTAGE.md)
+
+---
+
 ## Overview
 
-This document defines the Minimum Viable Product (MVP) scope for Marine Maroc's fleet management system. The MVP focuses on core functionality needed for the 2-week pilot with 5 drivers.
+This document defines the Minimum Viable Product (MVP) scope for Marine Maroc's fleet management system. The MVP focuses on core functionality needed for the 2-week pilot with 5 drivers, with special emphasis on low-literacy, Arabic-first mobile UX.
 
 ---
 
@@ -154,10 +172,17 @@ This document defines the Minimum Viable Product (MVP) scope for Marine Maroc's 
 - Vehicle diagnostics (OBD-II)
 - Engine hours tracking
 
-### Phase 2F: Localization (+20K MAD)
-- Arabic language support
-- Right-to-left (RTL) UI
-- Arabic translations for mobile app
+### ~~Phase 2F: Localization~~ (NOW INCLUDED IN MVP!)
+- ✅ Arabic language support (INCLUDED)
+- ✅ Right-to-left (RTL) UI (INCLUDED)
+- ✅ Arabic translations for mobile app (INCLUDED)
+- ✅ Icon-heavy design for low literacy (INCLUDED)
+- ✅ Voice messages (INCLUDED)
+
+**Optional Enhancement (+15K MAD):**
+- Voice guidance system (audio instructions)
+- Offline voice files
+- Advanced voice commands
 
 ---
 
@@ -186,15 +211,23 @@ Chargements | Chauffeurs | Véhicules | Lieux | Carte
 - ❌ Fuel Reports
 - ❌ Issues
 
-### Mobile App Screens (Simplified)
+### Mobile App Screens (Simplified - Arabic-First)
 
 **Included:**
-- Login
-- Dashboard (assigned loads)
-- Load details
-- Start trip
-- Proof of delivery
-- Chat
+- Login (Arabic interface)
+- Dashboard (3 big icon buttons)
+- Load details (icons + minimal Arabic text)
+- Start trip (big green button)
+- Proof of delivery (camera + signature icons)
+- Voice messages (hold-to-record, no typing)
+
+**Design Principles:**
+- ✅ Arabic as primary language
+- ✅ Icons first, text second
+- ✅ 3-4 buttons max per screen
+- ✅ Large touch targets (80x80pt minimum)
+- ✅ Voice messages (no typing required)
+- ✅ Designed for low-literacy users
 
 **Removed:**
 - ❌ Fuel reports
@@ -202,6 +235,7 @@ Chargements | Chauffeurs | Véhicules | Lieux | Carte
 - ❌ Fleet overview
 - ❌ Vehicle details
 - ❌ Driver reports
+- ❌ Text-based chat (replaced with voice)
 
 ---
 
@@ -353,6 +387,8 @@ Chargements | Chauffeurs | Véhicules | Lieux | Carte
 - Data migration from existing systems
 - Custom reporting beyond standard views
 - White-label mobile app store submission
+- Voice guidance system (optional Phase 2 enhancement)
+- Professional voice actor recordings (using text-to-speech for MVP)
 
 ---
 

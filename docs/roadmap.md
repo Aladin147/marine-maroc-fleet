@@ -112,47 +112,59 @@ This roadmap outlines the development timeline, milestones, and deliverables for
 ## Phase 3: Frontend & Mobile (Week 3)
 
 ### Goals
-- Simplify console UI
-- Brand mobile app
-- Complete translations
+- Simplify console UI (French for dispatchers)
+- **Create Arabic-first, icon-heavy mobile app for low-literacy drivers**
+- Complete translations (French + Arabic)
 - End-to-end testing
 
 ### Tasks
 
-**Day 1-2: Console UI**
+**Day 1-2: Console UI (French for Dispatchers)**
 - [ ] Simplify navigation menu
 - [ ] Remove unused sections
 - [ ] Customize dashboard
 - [ ] Apply Marine Maroc theme
 - [ ] Test all core features
 
-**Day 3-4: Mobile App**
-- [ ] Update app icon
-- [ ] Update splash screen
+**Day 3-4: Mobile App (Arabic-First for Drivers)**
+- [ ] **Design icon-heavy interface (3-4 buttons max per screen)**
+- [ ] **Implement Arabic RTL layout**
+- [ ] **Create voice message system (hold-to-record, no typing)**
+- [ ] Update app icon and splash screen
 - [ ] Configure API endpoint
-- [ ] Apply Marine Maroc theme
-- [ ] French translations
-- [ ] Remove unused screens
+- [ ] Apply Marine Maroc theme and colors
+- [ ] **Arabic translations (primary language)**
+- [ ] Remove unused screens (fuel, issues, fleet overview)
+- [ ] **Implement large touch targets (80x80pt minimum)**
+- [ ] **Add visual feedback (animations, sounds, haptics)**
 
-**Day 5: Testing**
-- [ ] Test order creation
-- [ ] Test driver assignment
-- [ ] Test GPS tracking
-- [ ] Test proof of delivery
-- [ ] Test chat functionality
+**Day 5: Testing (Low-Literacy Focus)**
+- [ ] Test with Arabic interface
+- [ ] Test icon recognition without reading text
+- [ ] Test voice messages (record, send, receive, play)
+- [ ] Test GPS tracking (automatic, no driver interaction)
+- [ ] Test proof of delivery (camera icon, signature pad)
+- [ ] **Usability test with actual drivers if possible**
+- [ ] Test offline functionality
 - [ ] Fix bugs
 
 ### Deliverables
-- ✅ Simplified console interface
-- ✅ Branded mobile app
-- ✅ Complete French translations
+- ✅ Simplified console interface (French)
+- ✅ **Arabic-first mobile app with icon-heavy design**
+- ✅ **Voice message system (no typing required)**
+- ✅ Complete French translations (console)
+- ✅ Complete Arabic translations (mobile)
 - ✅ All core features tested
 
 ### Success Criteria
-- Console is intuitive and simple
+- Console is intuitive and simple (French)
+- **Mobile app is usable without reading (icons + voice)**
+- **Arabic RTL layout works perfectly**
+- **Voice messages work seamlessly**
 - Mobile app shows Marine Maroc branding
 - All features work as expected
 - No critical bugs
+- **Drivers can complete delivery without help**
 
 ---
 
@@ -462,15 +474,22 @@ This roadmap outlines the development timeline, milestones, and deliverables for
 - Vehicle diagnostics
 - Engine hours tracking
 
-### Phase 2F: Arabic Localization
-**Timeline:** 1-2 weeks  
-**Price:** +20,000 MAD
+### ~~Phase 2F: Arabic Localization~~ (NOW IN MVP!)
+**Timeline:** ~~1-2 weeks~~ **INCLUDED IN MVP**  
+**Price:** ~~+20,000 MAD~~ **INCLUDED**
 
-**Features:**
-- Arabic translations
-- RTL (right-to-left) UI
-- Arabic mobile app
-- Localized formats
+**Features (NOW IN MVP):**
+- ✅ Arabic translations
+- ✅ RTL (right-to-left) UI
+- ✅ Arabic mobile app
+- ✅ Localized formats
+- ✅ Icon-heavy design
+- ✅ Voice messages
+
+**Optional Enhancement (+15K MAD):**
+- Voice guidance system
+- Professional voice recordings
+- Advanced voice commands
 
 ---
 
