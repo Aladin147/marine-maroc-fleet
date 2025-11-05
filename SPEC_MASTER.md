@@ -40,10 +40,14 @@ Marine Maroc requires a fleet management system to track heavy equipment transpo
 ### Solution Approach
 
 Build a customized fleet management system using Fleetbase open-source platform as the foundation, with:
-- Simplified UI focused on core features
+- **Arabic-first interface** (critical differentiator - drivers have low literacy)
+- **Icon-heavy, visual UI** (minimal text, maximum clarity)
+- Extremely simplified mobile app (3-4 buttons max per screen)
 - Marine Maroc branding throughout
-- French language interface
+- French for dispatchers, Arabic for drivers
 - Standalone system (no integration with existing systems)
+
+**Key Insight from Marine Maroc:** Most truck drivers have low literacy in both French and Arabic. An intuitive, icon-based interface with Arabic support is our competitive advantage.
 
 ### Technology Stack
 
@@ -82,12 +86,14 @@ Build a customized fleet management system using Fleetbase open-source platform 
 - ✅ Places (pickup/delivery locations)
 - ✅ Contacts (customers, receivers)
 
-**Mobile App:**
-- ✅ View assigned loads
-- ✅ Start/complete trips
-- ✅ Background GPS tracking
-- ✅ Proof of delivery (photo + signature)
-- ✅ Chat with dispatch
+**Mobile App (Arabic-First, Icon-Heavy):**
+- ✅ View assigned loads (large icons, minimal text)
+- ✅ Start/complete trips (big green/red buttons)
+- ✅ Background GPS tracking (automatic, no driver interaction)
+- ✅ Proof of delivery (camera icon, signature pad)
+- ✅ Voice messages with dispatch (no typing required)
+- ✅ Arabic interface with voice guidance
+- ✅ Designed for low-literacy users
 
 **Infrastructure:**
 - ✅ Docker deployment
@@ -129,10 +135,12 @@ Build a customized fleet management system using Fleetbase open-source platform 
 - Temperature sensors
 - Vehicle diagnostics
 
-**Arabic Language (+20K MAD):**
-- Arabic translations
-- RTL (right-to-left) UI
-- Localized formats
+**~~Arabic Language~~ (NOW INCLUDED IN MVP - COMPETITIVE ADVANTAGE):**
+- ✅ Arabic translations (mobile app)
+- ✅ RTL (right-to-left) UI
+- ✅ Localized formats
+- ✅ Icon-heavy design for low-literacy users
+- ✅ Voice guidance (optional enhancement)
 
 ---
 
@@ -173,18 +181,21 @@ Build a customized fleet management system using Fleetbase open-source platform 
 ### Phase 3: Frontend & Mobile (Week 3)
 
 **Duration:** 5 days  
-**Goal:** Polish UI and brand mobile app
+**Goal:** Create icon-heavy, Arabic-first mobile app for low-literacy drivers
 
 **Key Deliverables:**
-- Simplified console UI
+- Simplified console UI (French for dispatchers)
 - Marine Maroc themed console
-- Branded mobile app
-- French translations complete
+- **Arabic-first mobile app with icon-heavy design**
+- **Visual workflow (icons > text)**
+- **Voice message support (no typing)**
+- French translations complete (console)
+- Arabic translations complete (mobile)
 - GPS tracking working
 - Proof of delivery functional
 - End-to-end testing passed
 
-**Requirements:** 25 requirements  
+**Requirements:** 25 requirements + 8 new Arabic/UX requirements  
 **Milestone Payment:** 40,000 MAD (20%)
 
 ### Phase 4: Deployment (Week 4)

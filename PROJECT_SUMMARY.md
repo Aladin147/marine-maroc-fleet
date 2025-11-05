@@ -37,9 +37,13 @@
 ✅ Places (locations)  
 ✅ Contacts (customers)  
 ✅ Proof of delivery (photo + signature)  
-✅ Chat with dispatch  
-✅ French language  
+✅ **Voice messages** with dispatch (no typing!)  
+✅ **Arabic-first interface** (competitive advantage!)  
+✅ **Icon-heavy design** for low-literacy users  
+✅ French language (console for dispatchers)  
 ✅ Marine Maroc branding  
+
+**🎯 KEY DIFFERENTIATOR:** Most Marine Maroc drivers have low literacy. Our Arabic-first, icon-heavy interface is designed specifically for them - this is what wins the deal!  
 
 ### Excluded (Phase 2 Upsells)
 ⏳ Advanced alerts & geofencing (+40K MAD)  
@@ -47,9 +51,10 @@
 ⏳ Analytics & reporting (+45K MAD)  
 ⏳ Route optimization (+50K MAD)  
 ⏳ Telematics integration (+60K MAD)  
-⏳ Arabic language (+20K MAD)  
+⏳ ~~Arabic language~~ **NOW INCLUDED IN MVP!**  
+⏳ Voice guidance system (+15K MAD - optional enhancement)  
 
-**Total Phase 2 Potential:** +250K MAD
+**Total Phase 2 Potential:** +245K MAD
 
 ---
 
