@@ -15,29 +15,33 @@ Phase 2 focuses on backend customization including French localization, simplifi
 
 ## Requirements
 
-### Requirement 1: French Localization
+### Requirement 1: Multi-Language Localization (French + Arabic)
 
-**User Story:** As a dispatcher, I want the entire system in French, so that I can use it in my native language.
-
-#### Acceptance Criteria
-
-1. WHEN the Console loads, THE System SHALL display all UI text in French
-2. WHEN the API returns error messages, THE System SHALL provide French error messages
-3. WHEN emails are sent, THE System SHALL use French email templates
-4. WHEN dates are displayed, THE System SHALL use French date format (DD/MM/YYYY)
-5. WHEN numbers are displayed, THE System SHALL use French number format (space as thousand separator)
-
-### Requirement 2: Translation Completeness
-
-**User Story:** As a user, I want all text translated to French, so that I don't encounter English text unexpectedly.
+**User Story:** As a dispatcher, I want the console in French, and as a driver, I want the mobile app in Arabic, so that everyone can use the system in their preferred language.
 
 #### Acceptance Criteria
 
-1. WHEN navigating the Console, THE System SHALL not display any English text in the UI
-2. WHEN viewing order statuses, THE System SHALL display French status names
-3. WHEN reading button labels, THE System SHALL show French button text
-4. WHEN viewing form labels, THE System SHALL display French field names
-5. WHEN encountering validation errors, THE System SHALL show French error messages
+1. WHEN the Console loads, THE System SHALL display all UI text in French for dispatchers
+2. WHEN the Mobile App loads, THE System SHALL display all UI text in Arabic for drivers
+3. WHEN the API returns error messages, THE System SHALL provide messages in the appropriate language (French or Arabic)
+4. WHEN emails are sent, THE System SHALL use French email templates for dispatchers
+5. WHEN dates are displayed, THE System SHALL use appropriate format (DD/MM/YYYY for French, DD/MM/YYYY for Arabic)
+6. WHEN numbers are displayed, THE System SHALL use appropriate format (space separator for French, Arabic numerals for Arabic)
+7. WHEN the API detects user language preference, THE System SHALL return responses in the correct language
+
+### Requirement 2: Translation Completeness (French + Arabic)
+
+**User Story:** As a user, I want all text translated to my language, so that I don't encounter English text unexpectedly.
+
+#### Acceptance Criteria
+
+1. WHEN navigating the Console, THE System SHALL not display any English text in the French UI
+2. WHEN using the Mobile App, THE System SHALL not display any English or French text in the Arabic UI
+3. WHEN viewing order statuses, THE System SHALL display status names in the appropriate language (Nouveau/جديد, Assigné/مُعيّن, En Route/في الطريق, Livré/تم التسليم)
+4. WHEN reading button labels, THE System SHALL show text in the appropriate language
+5. WHEN viewing form labels, THE System SHALL display field names in the appropriate language
+6. WHEN encountering validation errors, THE System SHALL show error messages in the appropriate language
+7. WHEN API responses include text, THE System SHALL provide translations for both French and Arabic
 
 ### Requirement 3: Simplified Order Workflow
 
@@ -183,14 +187,29 @@ Phase 2 focuses on backend customization including French localization, simplifi
 4. WHEN the connection drops, THE System SHALL automatically reconnect
 5. WHEN a broadcast is sent, THE System SHALL only send to authorized users
 
-### Requirement 15: Testing and Validation
+### Requirement 15: Arabic Language Support in Backend
+
+**User Story:** As a developer, I want the backend to support Arabic language, so that the mobile app can display Arabic text correctly.
+
+#### Acceptance Criteria
+
+1. WHEN the database stores text, THE System SHALL support UTF-8 encoding for Arabic characters
+2. WHEN API responses are generated, THE System SHALL provide Arabic translations for mobile app endpoints
+3. WHEN order statuses are returned, THE System SHALL include Arabic status names (جديد, مُعيّن, في الطريق, تم التسليم)
+4. WHEN error messages are returned, THE System SHALL provide Arabic error messages for mobile app
+5. WHEN push notifications are sent, THE System SHALL send Arabic text to drivers
+6. WHEN the API detects Arabic language preference, THE System SHALL return all text in Arabic
+
+### Requirement 16: Testing and Validation
 
 **User Story:** As a quality assurance engineer, I want Phase 2 deliverables tested, so that we can proceed to Phase 3 with confidence.
 
 #### Acceptance Criteria
 
-1. WHEN French translations are tested, THE System SHALL display all text in French
-2. WHEN the workflow is tested, THE System SHALL transition through all 4 stages correctly
-3. WHEN external services are tested, THE System SHALL connect successfully
-4. WHEN the API is tested, THE System SHALL respond within performance targets
-5. WHEN end-to-end testing is performed, THE System SHALL complete all core workflows
+1. WHEN French translations are tested, THE System SHALL display all console text in French
+2. WHEN Arabic translations are tested, THE System SHALL provide all mobile app text in Arabic
+3. WHEN the workflow is tested, THE System SHALL transition through all 4 stages correctly
+4. WHEN external services are tested, THE System SHALL connect successfully
+5. WHEN the API is tested, THE System SHALL respond within performance targets
+6. WHEN end-to-end testing is performed, THE System SHALL complete all core workflows
+7. WHEN Arabic characters are stored and retrieved, THE System SHALL maintain proper encoding

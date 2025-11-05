@@ -88,17 +88,17 @@ Phase 3 focuses on frontend console UI simplification, mobile app branding, comp
 4. WHEN the header is displayed, THE System SHALL use Marine Blue background
 5. WHEN links are shown, THE System SHALL use Marine Maroc accent color (#00CED1)
 
-### Requirement 7: Mobile App Branding
+### Requirement 7: Mobile App Branding (Arabic-First)
 
-**User Story:** As a driver, I want the app to show Marine Maroc branding, so that I know I'm using the official company app.
+**User Story:** As a driver with low literacy, I want the app to show Marine Maroc branding with Arabic text and clear icons, so that I recognize it's the official company app.
 
 #### Acceptance Criteria
 
-1. WHEN the app launches, THE System SHALL display Marine Maroc splash screen
+1. WHEN the app launches, THE System SHALL display Marine Maroc splash screen with Arabic text
 2. WHEN viewing the app icon, THE System SHALL show Marine Maroc logo
-3. WHEN the app is running, THE System SHALL display Marine Maroc logo in the header
-4. WHEN viewing the app name, THE System SHALL show "Marine Maroc Fleet"
-5. WHEN the app uses colors, THE System SHALL use Marine Maroc brand colors
+3. WHEN the app is running, THE System SHALL display Marine Maroc logo in the header with Arabic app name
+4. WHEN viewing the app name, THE System SHALL show "Marine Maroc Fleet" in Arabic (أسطول مارين ماروك)
+5. WHEN the app uses colors, THE System SHALL use Marine Maroc brand colors (Marine Blue #0047AB, Ocean Teal #00CED1)
 
 ### Requirement 8: Mobile App Configuration
 
@@ -196,17 +196,19 @@ Phase 3 focuses on frontend console UI simplification, mobile app branding, comp
 4. WHEN viewing error messages, THE System SHALL display French error text
 5. WHEN viewing tooltips, THE System SHALL show French tooltip text
 
-### Requirement 16: French Translations in Mobile App
+### Requirement 16: Arabic Translations in Mobile App (Primary Language)
 
-**User Story:** As a driver, I want the mobile app in French, so that I can understand all instructions.
+**User Story:** As a driver with low literacy in French, I want the mobile app in Arabic with minimal text, so that I can understand and use it easily.
 
 #### Acceptance Criteria
 
-1. WHEN the app loads, THE System SHALL display all text in French
-2. WHEN viewing screen titles, THE System SHALL show French titles
-3. WHEN viewing buttons, THE System SHALL show French button text
-4. WHEN viewing error messages, THE System SHALL display French error text
-5. WHEN viewing notifications, THE System SHALL show French notification text
+1. WHEN the app loads, THE System SHALL display all text in Arabic as the primary language
+2. WHEN viewing screen titles, THE System SHALL show Arabic titles in large, clear font (minimum 18pt)
+3. WHEN viewing buttons, THE System SHALL show Arabic button text with accompanying icons
+4. WHEN viewing error messages, THE System SHALL display Arabic error text with visual indicators
+5. WHEN viewing notifications, THE System SHALL show Arabic notification text with icons
+6. WHEN the interface is displayed, THE System SHALL use right-to-left (RTL) layout
+7. WHEN text is minimal, THE System SHALL prioritize icons over text for all actions
 
 ### Requirement 17: Offline Functionality
 
@@ -304,7 +306,104 @@ Phase 3 focuses on frontend console UI simplification, mobile app branding, comp
 4. WHEN images are loading, THE System SHALL show placeholder images
 5. WHEN loading takes longer than 3 seconds, THE System SHALL show a progress message
 
-### Requirement 25: Testing and Validation
+### Requirement 25: Icon-First Design for Low Literacy
+
+**User Story:** As a driver who struggles with reading, I want every action represented by a clear icon, so that I can use the app without reading text.
+
+#### Acceptance Criteria
+
+1. WHEN viewing any screen, THE System SHALL display a maximum of 3-4 primary actions
+2. WHEN viewing buttons, THE System SHALL show large, recognizable icons (minimum 48x48pt) with minimal text
+3. WHEN viewing status indicators, THE System SHALL use color coding (green=good, red=stop, orange=attention)
+4. WHEN performing actions, THE System SHALL provide visual feedback (animations, color changes)
+5. WHEN icons are displayed, THE System SHALL use universally understood symbols (play, stop, camera, signature)
+
+### Requirement 26: Large Touch Targets for Easy Interaction
+
+**User Story:** As a driver using the app while in a truck, I want large buttons that are easy to tap, so that I don't make mistakes.
+
+#### Acceptance Criteria
+
+1. WHEN buttons are displayed, THE System SHALL have minimum touch target size of 80x80pt
+2. WHEN buttons are arranged, THE System SHALL have minimum 16pt spacing between them
+3. WHEN the screen is viewed, THE System SHALL avoid small, closely-packed UI elements
+4. WHEN interactive elements are displayed, THE System SHALL clearly indicate they are tappable
+5. WHEN buttons are pressed, THE System SHALL provide haptic feedback
+
+### Requirement 27: Voice Message System (No Typing Required)
+
+**User Story:** As a driver who types slowly, I want to send voice messages instead of text, so that I can communicate quickly without typing.
+
+#### Acceptance Criteria
+
+1. WHEN sending a message, THE System SHALL allow hold-to-record voice messages (like WhatsApp)
+2. WHEN recording, THE System SHALL show visual waveform and recording duration
+3. WHEN releasing the button, THE System SHALL automatically send the voice message
+4. WHEN receiving a voice message, THE System SHALL show play button with duration
+5. WHEN playing a message, THE System SHALL show playback progress
+6. WHEN the device is offline, THE System SHALL queue voice messages and send when online
+
+### Requirement 28: Right-to-Left (RTL) Layout for Arabic
+
+**User Story:** As an Arabic speaker, I want the app layout to flow right-to-left, so that it feels natural to use.
+
+#### Acceptance Criteria
+
+1. WHEN the app is in Arabic, THE System SHALL mirror the entire layout to RTL
+2. WHEN text is displayed, THE System SHALL align text to the right
+3. WHEN navigation occurs, THE System SHALL use RTL swipe gestures (swipe right to go back)
+4. WHEN icons are directional, THE System SHALL flip them for RTL (arrows, chevrons)
+5. WHEN the layout is RTL, THE System SHALL maintain proper visual hierarchy
+
+### Requirement 29: Minimal Text, Maximum Clarity
+
+**User Story:** As a driver with low literacy, I want screens with minimal text and clear visuals, so that I understand what to do without reading.
+
+#### Acceptance Criteria
+
+1. WHEN viewing any screen, THE System SHALL use icons as primary communication method
+2. WHEN text is necessary, THE System SHALL use short, simple Arabic words (maximum 2-3 words)
+3. WHEN displaying information, THE System SHALL use visual representations (maps, photos, icons)
+4. WHEN showing status, THE System SHALL use color and icons instead of text labels
+5. WHEN instructions are needed, THE System SHALL use step-by-step visual guides
+
+### Requirement 30: Visual and Audio Feedback
+
+**User Story:** As a driver, I want clear feedback when I perform actions, so that I know the app is responding.
+
+#### Acceptance Criteria
+
+1. WHEN a button is pressed, THE System SHALL provide haptic feedback (vibration)
+2. WHEN an action succeeds, THE System SHALL show green checkmark animation with success sound
+3. WHEN an error occurs, THE System SHALL show red X animation with error sound
+4. WHEN loading data, THE System SHALL show animated loading indicator
+5. WHEN a critical action is performed, THE System SHALL show confirmation dialog with icons
+
+### Requirement 31: Offline-First Design
+
+**User Story:** As a driver who often has poor internet connection, I want the app to work offline, so that I can continue working without connectivity.
+
+#### Acceptance Criteria
+
+1. WHEN the device is offline, THE System SHALL allow viewing assigned orders
+2. WHEN offline, THE System SHALL allow capturing photos and signatures
+3. WHEN offline, THE System SHALL store GPS locations locally
+4. WHEN connection is restored, THE System SHALL automatically sync all offline data
+5. WHEN syncing, THE System SHALL show sync progress with visual indicator
+
+### Requirement 32: Low-Literacy Usability Testing
+
+**User Story:** As a product owner, I want the app tested with actual low-literacy drivers, so that we ensure it's truly usable for them.
+
+#### Acceptance Criteria
+
+1. WHEN usability testing is conducted, THE System SHALL be tested with at least 3 drivers with varying literacy levels
+2. WHEN testing, THE System SHALL allow drivers to complete tasks without written instructions
+3. WHEN observing drivers, THE System SHALL identify any confusion points or difficulties
+4. WHEN feedback is collected, THE System SHALL document improvements needed
+5. WHEN testing is complete, THE System SHALL achieve 90%+ task completion rate without help
+
+### Requirement 33: Testing and Validation
 
 **User Story:** As a quality assurance engineer, I want Phase 3 deliverables tested, so that we can proceed to Phase 4 with confidence.
 
@@ -312,6 +411,9 @@ Phase 3 focuses on frontend console UI simplification, mobile app branding, comp
 
 1. WHEN the console is tested, THE System SHALL pass all UI functionality tests
 2. WHEN the mobile app is tested, THE System SHALL pass all feature tests on iOS and Android
-3. WHEN translations are tested, THE System SHALL display all text in French
-4. WHEN end-to-end tests are run, THE System SHALL complete all user workflows successfully
-5. WHEN performance is tested, THE System SHALL meet all performance targets
+3. WHEN translations are tested, THE System SHALL display all text in Arabic (mobile) and French (console)
+4. WHEN icon recognition is tested, THE System SHALL be usable without reading text
+5. WHEN voice messages are tested, THE System SHALL record, send, and play successfully
+6. WHEN RTL layout is tested, THE System SHALL display correctly in Arabic
+7. WHEN end-to-end tests are run, THE System SHALL complete all user workflows successfully
+8. WHEN performance is tested, THE System SHALL meet all performance targets
